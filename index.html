@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loto USDT - Decentralized Lottery</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0a0f0a;
+            color: #e0ffe0;
+            text-align: center;
+        }
+
+        .header-img {
+            width: 100%;
+            max-width: 900px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 12px;
+        }
+
+        .flags {
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .flag-btn {
+            cursor: pointer;
+            font-size: 34px;
+            transition: transform .2s;
+        }
+        .flag-btn:hover {
+            transform: scale(1.15);
+        }
+
+        .content {
+            display: none;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: left;
+            background: #0f150f;
+            border-radius: 12px;
+        }
+
+        .visible {
+            display: block;
+        }
+
+        .btn-play {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 22px;
+            background: #1db954;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+
+        .btn-play:hover {
+            background: #17a447;
+        }
+
+        h2 {
+            color: #6cff6c;
+        }
+    </style>
+
+    <script>
+        function showLang(lang) {
+            document.querySelectorAll('.content').forEach(c => c.classList.remove('visible'));
+            document.getElementById(lang).classList.add('visible');
+            window.scrollTo(0, 0);
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Image top page -->
+    <img src="lotoB.jpg" class="header-img">
+
+    <!-- Flag selector -->
+    <div class="flags">
+        <span class="flag-btn" onclick="showLang('fr')">🇫🇷</span>
+        <span class="flag-btn" onclick="showLang('en')">🇺🇸</span>
+        <span class="flag-btn" onclick="showLang('cn')">🇨🇳</span>
+        <span class="flag-btn" onclick="showLang('de')">🇩🇪</span>
+        <span class="flag-btn" onclick="showLang('ru')">🇷🇺</span>
+        <span class="flag-btn" onclick="showLang('pt')">🇵🇹</span>
+        <span class="flag-btn" onclick="showLang('es')">🇪🇸</span>
+        <span class="flag-btn" onclick="showLang('it')">🇮🇹</span>
+        <span class="flag-btn" onclick="showLang('nl')">🇳🇱</span>
+    </div>
+
+    <!-- FRENCH -->
+    <div id="fr" class="content">
+        <img src="lotoB.jpg" class="header-img">
+        <h2>🇫🇷 Français</h2>
+        <p><b>Bienvenue dans un loto nouvelle génération : transparent, équitable et sécurisé.</b></p>
+        <p>🎮 <b>Loto USDT / Loto Crypto — Comment jouer ?</b><br>
+        • Choisis tes numéros dans une grille qui s'adapte automatiquement au nombre de joueurs.<br>
+        • Ticket classique : 2 USDT = 1 participation.<br>
+        • Grille figée dès le premier ticket.<br>
+        • Ticket gratuit disponible quand la grille atteint 51 numéros.</p>
+
+        <p>🎲 <b>Tirage sécurisé & vérifiable</b><br>
+        Basé sur Drand, un réseau mondial d’aléa décentralisé.</p>
+
+        <p>🏆 <b>Gagnants</b><br>
+        • Ticket parfait : 100% de la cagnotte (ou partagé).<br>
+        • Ticket bonus : presque parfait + bonus.<br>
+        • Aucun gagnant : 99% reporté.</p>
+
+        <a class="btn-play" href="https://t.me/Loto_usdtbot?start=6689054327">🎟️ Jouer au Loto USDT</a>
+    </div>
+
+    <!-- ENGLISH -->
+    <div id="en" class="content">
+        <img src="lotoB.jpg" class="header-img">
+        <h2>🇺🇸 English</h2>
+        <p><b>Welcome to a new-generation lottery: transparent, fair, and secure.</b></p>
+
+        <p>🎮 <b>USDT Lottery — How to play?</b><br>
+        • Pick your numbers on an adaptive grid.<br>
+        • Classic ticket: 2 USDT = 1 entry.<br>
+        • Grid freezes after the first paid ticket.<br>
+        • Free ticket at 51 numbers.</p>
+
+        <p>🎲 <b>Secure & verifiable draw</b><br>
+        Uses Drand, global decentralized randomness.</p>
+
+        <p>🏆 <b>Winners</b><br>
+        • Perfect ticket → 100% of the pool.<br>
+        • Bonus ticket → almost perfect + bonus.<br>
+        • No winner → 99% carried over.</p>
+
+        <a class="btn-play" href="https://t.me/Loto_usdtbot?start=6689054327">🎟️ Play USDT Lottery</a>
+    </div>
+
+    <!-- CHINESE -->
+    <div id="cn" class="content">
+        <img src="lotoB.jpg" class="header-img">
+        <h2>🇨🇳 中文</h2>
+        <p><b>欢迎来到新一代乐透：透明、公平、安全。</b></p>
+
+        <p>🎮 <b>USDT 乐透 — 如何玩？</b><br>
+        • 选择你的号码。<br>
+        • 普通票：2 USDT = 1 次参与。<br>
+        • 第一张票后冻结。<br>
+        • 51 个号码后可领取免费票。</p>
+
+        <p>🎲 <b>安全且可验证</b><br>
+        使用 Drand，全局去中心化随机网络。</p>
+
+        <p>🏆 <b>中奖规则</b><br>
+        • 完美票 → 100% 奖池。<br>
+        • 奖励票 → 几乎完美 + 奖励号。<br>
+        • 无人中奖 → 99% 累积。</p>
+
+        <a class="btn-play" href="https://t.me/Loto_usdtbot?start=6689054327">🎟️ 进入 USDT 乐透</a>
+    </div>
+
+    <!-- GERMAN -->
+    <div id="de" class="content">
+        <img src="lotoB.jpg" class="header-img">
+        <h2>🇩🇪 Deutsch</h2>
+        <p><b>Willkommen bei einer neuen Generation von Lotto: transparent, fair und sicher.</b></p>
+
+        <p>🎮 <b>USDT-Lotto — Wie spielt man?</b><br>
+        • Zahlen wählen.<br>
+        • Klassisches Ticket: 2 USDT = 1 Teilnahme.<br>
+        • Raster friert ein.<br>
+        • Gratis Ticket bei 51 Zahlen.</p>
+
+        <p>🎲 <b>Sichere Ziehung</b><br>
+        Nutzt Drand, dezentrales Zufallsnetzwerk.</p>
+
+        <p>🏆 <b>Gewinner</b><br>
+        • Perfekt → 100% Jackpot.<br>
+        • Bonus → fast perfekt + Bonus.<br>
+        • Keine Gewinner → rollover.</p>
+
+        <a class="btn-play" href="https://t.me/Loto_usdtbot?start=6689054327">🎟️ USDT Lotto spielen</a>
+    </div>
+
+    <!-- RUSSIAN -->
+    <div id="ru" class="content">
+        <img src="lotoB.jpg" class="header-img">
+        <h2>🇷🇺 Русский</h2>
+
+        <p><b>Добро пожаловать в лотерею нового поколения.</b></p>
+
+        <a class="btn-play" href="https://t.me/Loto_usdtbot?start=6689054327">🎟️ Играть в USDT Лотерею</a>
+    </div>
+
+    <!-- PORTUGUESE -->
+    <div id="pt" class="content">
+        <img src="lotoB.jpg" class="header-img">
+        <h2>🇵🇹 Português</h2>
+
+        <a class="btn-play" href="https://t.me/Loto_usdtbot?start=6689054327">🎟️ Jogar Loteria USDT</a>
+    </div>
+
+    <!-- SPANISH -->
+    <div id="es" class="content">
+        <img src="lotoB.jpg" class="header-img">
+        <h2>🇪🇸 Español</h2>
+
+        <a class="btn-play" href="https://t.me/Loto_usdtbot?start=6689054327">🎟️ Jugar Lotería USDT</a>
+    </div>
+
+    <!-- ITALIAN -->
+    <div id="it" class="content">
+        <img src="lotoB.jpg" class="header-img">
+        <h2>🇮🇹 Italiano</h2>
+
+        <a class="btn-play" href="https://t.me/Loto_usdtbot?start=6689054327">🎟️ Giocare alla Lotteria USDT</a>
+    </div>
+
+    <!-- DUTCH -->
+    <div id="nl" class="content">
+        <img src="lotoB.jpg" class="header-img">
+        <h2>🇳🇱 Nederlands</h2>
+
+        <a class="btn-play" href="https://t.me/Loto_usdtbot?start=6689054327">🎟️ USDT Lotto Spelen</a>
+    </div>
+
+</body>
+</html>
